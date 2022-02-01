@@ -184,8 +184,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container">
         	<p>Are your coughs dry?</p>
-		<a href="#seven" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
-		<a href="#seven" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
+		<a href="#results" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
+		<a href="#results" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
     	</div><!-- I included this question because coughs caused by allergies tend to be dry, and coughs caused by the common cold tend to have phlegm. -->
 		
 	<div id="footer" class="w3-bottom w3-container w3-flat-carrot">
@@ -193,14 +193,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
 </div>	
 	
-<div class="page" id="seven">
+<div class="page" id="results">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	</div>
 	
     	<div id="content" class="w3-container">	
-		<button> onclick="resultsoutput();" class="w3-btn w3-black"> Results </button>
-	</div><!-- CODE RESULTS -->
+		<p>Click below to calculate your results!</p>
+		<a href="#results" onclick="resultsoutput();" class="w3-btn w3-black"> Results </a>
+	</div><!-- Results are not displayed. Instead, the participant is taken back to the first page. -->
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
