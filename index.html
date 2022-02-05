@@ -94,13 +94,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
+	<!-- The below code creates a button that takes the participant to the next page. -->
+	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-	</div><!-- /content -->
+	</div><!-- The content above serves as a introduction and disclaimer. The code below adds a footer to the end of the page. -->
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
@@ -115,7 +117,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         	<p>Are your eyes watery or itchy?</p>
 		<a href="#two" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
 		<a href="#two" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
-    	</div><!-- /content -->
+    	</div><!-- <p> indicates a paragraph. Below the question, is the code that creates two buttons that both take the participant to the next page. 
+ 	      Depending on the participant's response, the calculated probability of a cold or allergies will increase using the previously described functions. -->
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
@@ -130,12 +133,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a fever?</p>
 		<a href="#three" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
 		<a href="#three" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
-	</div><!-- /content -->
+	</div><!-- Each of the questions are formatted the same way, and they ask about a differentiating symptom of either allergies or a cold. -->
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
 	</div>
 
+<!-- The beginning of each of the questions includes a page identifier, which is referrenced in each of the codes for the buttons. -->	
 <div class="page" id="three">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
@@ -145,7 +149,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		<p>Do you have a sore throat?</p>
 		<a href="#four" onclick="coldAdd();" class="w3-btn w3-black"> Yes </a>
 		<a href="#four" onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
-	</div><!-- /content -->	
+	</div>	
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
@@ -154,13 +158,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="four">
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
+		<!-- Each page also includes a header. The title of the header is coded above. -->
 	</div>
 	
     	<div id="content" class="w3-container">
         	<p>Are your symptoms seasonal or chronic?</p>
 		<a href="#five" onclick="allergyAdd();" class="w3-btn w3-black"> Yes </a>
 		<a href="#five" onclick="coldAdd();" class="w3-btn w3-black"> No </a>
-    	</div><!-- /content -->
+    	</div>
 		<footer class="w3-bottom w3-container w3-flat-carrot">
 			<p>DIY!</p>
 		</footer>
@@ -204,7 +209,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     	<div id="content" class="w3-container">	
 		<p>Click below to calculate your results!</p>
 		<a href="#results" onclick="resultsoutput();" class="w3-btn w3-black"> Results </a>
-	</div><!-- Results are not displayed. Instead, the participant receives a 404 error. -->
+	</div><!-- The results are displayed on another page. -->
 	
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
