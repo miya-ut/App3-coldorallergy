@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 The goal of the code is to garner a greater understanding of foundational coding while also producing a diagnostic app.
  
 Known Issues:
-The app can currently not calculate the results and the footers are not visible on each page.
+The results display on a separate page without formatting.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -36,19 +36,22 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
+	<!-- This defines the allergy and cold variables and establishes them to begin at 0. -->
         var allergy_count = 0;
         var cold_count = 0;
 
-
+	<!-- This function indicates that the answer to a question is in favor of the participant having allergies instead of a cold. -->
         function allergyAdd(){
             allergy_count = allergy_count + 1;
 
         }
 
+	<!-- This function indicates that the answer to a question is in favor of the participant having a cold instead of allergies. -->
         function coldAdd(){
             cold_count = cold_count + 1;
         }
 	
+	<!-- This function calculates the percent likelihood that the participant has a cold or allergies depending on their answers. It also displays the results. -->
 	function resultsoutput(){
 		var coldPercent = (cold_count/6) * 100
 		var allergyPercent = (allergy_count/6) * 100
